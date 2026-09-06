@@ -21,7 +21,7 @@ A personal portfolio website built with modern web technologies to showcase proj
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aditiiprasad/my-portfolio.git
+   git clone https://github.com/Amansingh9931/portfolio-main.git
    cd my-portfolio
    ```
 
