@@ -71,8 +71,8 @@ const Projects = () => {
       { 
         title: "Self-Healing DevOps / SRE System", 
         color: "bg-custom-red", 
-        tools: [ "Jenkins", "Docker", "Linux", "Shell Scripting", "Health Checks", "Monitoring", "Automation" ], 
-        githubUrl: "https://github.com/Amansingh9931",
+        tools: [ "Jenkins", "Docker", "Linux", "Shell Scripting", "Prometheus", "Grafana", "Health Checks", "Monitoring", "Automation", "Git", "GitHub" ],
+        githubUrl: "https://github.com/Amansingh9931/SelfHealing.git",
         liveUrl: "#", 
         description: [ "Built a self-healing system that detects service failures through automated health checks and triggers recovery workflows.", "Implemented restart policies and recovery scripts to reduce manual intervention during service failures.", "Simulated service failures and validated automated recovery workflows to improve service availability and resilience.", "Integrated monitoring and alerting mechanisms to improve troubleshooting and operational visibility." ] 
       }, 
