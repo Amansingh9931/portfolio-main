@@ -9,7 +9,7 @@ type HistoryItem = {
 const MiniTerminal = () => {
   const [input, setInput] = useState('');
   const [history, setHistory] = useState<HistoryItem[]>([
-    { type: 'output', text: 'AditiOS v1.0.0 (tty1)' },
+    { type: 'output', text: 'AmanOS v1.0.0 (tty1)' },
     { type: 'output', text: 'Type "help" to see available commands.' }
   ]);
 
@@ -25,7 +25,7 @@ const MiniTerminal = () => {
   const handleCommand = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       const cmd = input.trim().toLowerCase();
-      addLine(`guest@aditi:~$ ${input}`, 'input');
+      addLine(`guest@aman:~$ ${input}`, 'input');
 
 
       if (secretNumber !== null && cmd !== '' && !isNaN(Number(cmd))) {
@@ -49,20 +49,19 @@ const MiniTerminal = () => {
           break;
 
         case 'whoami':
-          addLine('Aditi | 3rd Year B.Tech CSE @ BIT Mesra');
-          addLine('Status: LeetCode Knight ⚔️ | Full Stack & AI Dev');
+          addLine('Aman | 4th Year B.Tech CSE @ Sara Birla Universty');
+          addLine('Status:  Full Stack & DevOps');
           break;
 
         case 'skills':
-          addLine('► React, Node.js, FastAPI, Python, C/C++');
-          addLine('► AI/ML: Transformers, LLMs, Fuzzy Logic');
+          addLine('► React, Node.js, Java, Python, C/C++');
+          addLine('► DevOps: Docker, Kubernetes, CI/CD, GitHub Actions');
           break;
 
         case 'projects':
-          addLine('1. Traitors (AI Multi-Agent Game)');
-          addLine('2. LagFree (Mamdani FIS Optimizer)');
-          addLine('3. Misinfo Drift Detector');
-          addLine('4. DripTrack (MERN Wardrobe)');
+          addLine('1. GramSwasthya_AI');
+          addLine('2. GroceCart (MERN E-commerce)');
+          addLine('3. Collage Discovery Platform');
           break;
 
         case 'game':
@@ -130,7 +129,7 @@ const MiniTerminal = () => {
           <div className="w-3 h-3 rounded-full bg-custom-yellow border-2 border-black"></div>
           <div className="w-3 h-3 rounded-full bg-custom-green border-2 border-black"></div>
         </div>
-        <span className="font-bold text-black text-xs tracking-widest">root@aditi:~</span>
+        <span className="font-bold text-black text-xs tracking-widest">root@aman:~</span>
         <div className="w-10"></div>
       </div>
 
@@ -145,7 +144,7 @@ const MiniTerminal = () => {
         ))}
 
         <div className="flex items-center mt-2">
-          <span className="text-custom-green mr-2">guest@aditi:~$</span>
+          <span className="text-custom-green mr-2">guest@aman:~$</span>
           <input
             type="text"
             value={input}
