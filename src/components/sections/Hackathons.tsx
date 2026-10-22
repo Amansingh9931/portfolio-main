@@ -55,14 +55,14 @@ const Hackathons: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
                                     <h3 className="text-xl font-bold leading-snug">IBM National Level Hackathon 2026</h3>
                                     <span className="text-3xl flex-shrink-0">🏆</span>
                                 </div>
-                                <p className="font-bold text-lg mb-2 text-custom-blue">Finalist</p>
+                                <p className="font-bold text-lg mb-2 text-custom-blue">Winner</p>
                                 <p className="text-sm font-medium text-gray-700 leading-relaxed border-t-4 border-black border-dashed pt-4 mt-auto">
-                                    Top 10 out of 1 lakh+ participants.
+                                    Winner out of 1 lakh+ participants.
                                 </p>
                             </div>
                         </div>
 
-                        
+
                         <div className="border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-4px] transition-all flex flex-col h-full relative bg-white">
                             <div className="border-b-4 border-black px-3 py-2 flex justify-between items-center bg-custom-blue">
                                 <div className="flex gap-2">
